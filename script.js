@@ -13,3 +13,15 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     document.getElementById('message').textContent = 'Invalid username or password. Please try again.';
   }
 });
+const video = document.getElementById('videoBG');
+const muteButton = document.getElementById('muteButton');
+
+muteButton.addEventListener('click', () => {
+  if (video.muted) {
+    video.muted = false;
+    muteButton.textContent = 'Mute';
+  } else {
+    video.muted = true;
+    muteButton.textContent = 'Unmute';
+  }
+});
