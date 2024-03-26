@@ -25,3 +25,14 @@ muteButton.addEventListener('click', () => {
     muteButton.textContent = 'Unmute';
   }
 });
+
+
+
+
+
+const inputText = document.getElementById('inputText');
+const previewText = document.getElementById('previewText');
+
+inputText.addEventListener('input', function() {
+  previewText.textContent = inputText.value;
+});
